@@ -15,4 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+    //return ("Bienvenido perro");
+});
+
+Route::get('productos', function() {
+    return "Producto";
+});
+
+Route::get('productos/{name}', function($name) {
+    return "Producto: $name";
+});
+
+Route::get('users/{id}', function ($id) {
+    return "usuario: $id";
 });
